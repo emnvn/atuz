@@ -1,0 +1,10 @@
+#boss_menu .option ul li {position: relative}
+#boss_menu .sub_menu  {}
+#boss_menu ul li ul li > div{
+	z-index:100!important;
+	background: #FFFFFF;
+	padding: 5px;
+	border: 1px solid #000000;
+}
+
+#boss_menu ul li ul li div{display:none;position:absolute;top:0;left:100%;z-index:100;}

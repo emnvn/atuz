@@ -1,0 +1,108 @@
+/* God I hate Microsoft! */
+#header #cart {
+	width: 300px;
+}
+#header #cart .heading {
+	position: relative;
+	right: 0px;
+	margin-right: 0px;
+}
+#header #cart .content {
+
+}
+#header #search {
+	position: inherit;
+	float: right;
+}
+#header .button-search {
+	top: 1px;
+}
+#header #search input {
+	padding: 2px 0px 1px 0px;
+	margin-left:15px;
+	margin-right:0px;
+	width:200px;
+	margin-top:10px;
+}
+/* menu */
+#menu ul li {
+	position: relative;
+}
+#menu ul li div {
+	z-index: 5;
+	border:1px solid #EEE;
+	min-width:170px;
+}
+#menu ul li ul li a {
+	padding-left:8px;
+}
+#menu ul li.active div {
+	display: block;
+}
+.success, .warning, .attention, .information {
+	position: relative;
+}
+.success .close, .warning .close, .attention .close, .information .close {
+	position: absolute;
+	right: 10px;
+}
+.box-product > div {
+	display: inline;
+}
+.product-grid > div {
+	display: inline;
+}
+/* button */
+.prduct-info a.button span {
+	line-height: 12px;
+	display: block;
+}
+.box-product .big {
+	display:inline;
+}
+.banner1 {
+	clear:both;
+	border:1px solid #000;
+}
+.footer-static-links ul {
+	width:185px;
+	margin-left:0;
+}
+.box-product-test > div {
+	display:inline;
+}
+
+.center-containt-home {
+	float:none;
+	overflow:hidden;
+}
+input.button {
+	padding:5px 2px 5px 2px;	
+}
+.checkout-heading a {
+	margin-top:-15px;
+}
+.product-info .options {
+	margin-bottom:25px !important;
+	padding:0 0 0 5px;
+}
+.product-info .review {width:300px;}
+a.button {
+	padding:5px 10px 6px 10px;
+}
+.sitemap-info {
+	margin-bottom:0px;
+}
+.buttons {
+	margin-bottom:0;
+	margin-top:10px;
+}
+#content .content {
+	margin-bottom:0;
+}
+.login-content {
+	margin-bottom:0;
+}
+.contact-info {
+	margin-bottom:5px;
+}

@@ -1,0 +1,16 @@
+<modification>
+<id>Test VQMOD</id>
+<version>1.0</version>
+<vqmver>1.1.0</vqmver>
+<author>nghiaem@gmail.com</author>
+<file name="catalog/controller/common/header.php">
+<operation>
+<search position="after"><![CDATA[
+$this->data['title'] = $this->document->getTitle();
+]]></search>
+<add><![CDATA[
+$this->data['title'] = $this->data['title']." - VQMOD ENABLED";
+]]></add>
+</operation>
+</file>
+</modification>
