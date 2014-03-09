@@ -1,7 +1,7 @@
 body {background: url("../image/bg_color01_01.jpg") repeat-x scroll center 0 transparent;}
-body.home_page{background: url(../image/bg_index_color01_01.jpg) repeat-x center 0;	} 
+body.home_page{background: url(../image/bg_index_color01_01.jpg) no-repeat center 0;	} 
 @media only screen and (max-width: 767px) {	 
-	     body{-webkit-text-size-adjust: none; font-size:14px; background:url(../image/bg_other_mobile_blue.jpg) repeat-x center 0}
-		 body.home_page{background:url(../image/bg_mobile_blue.jpg) repeat-x center 0}
+	     body{-webkit-text-size-adjust: none; font-size:14px; background:url(../image/bg_other_mobile_blue.jpg) no-repeat center 0}
+		 body.home_page{background:url(../image/bg_mobile_blue.jpg) no-repeat center 0}
 		 #header #welcome{border-bottom:1px solid #0090c3}
 		 }

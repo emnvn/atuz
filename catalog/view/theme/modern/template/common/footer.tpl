@@ -1,4 +1,5 @@
 <div id="footer" class="sixteen columns">
+<!-- 
 <div class="boss_block_footer_4">
 <ul>
 	<li>
@@ -39,6 +40,7 @@
 	</li>
 </ul>
 </div>
+-->
 <div id="footer-top"><?php $index = 1;?> <?php if ($informations) { ?>
 <div class="boss-footer-column column-<?php echo $index ?>"><?php $index++;?>
 <h3><?php echo $text_information; ?></h3>
@@ -99,6 +101,7 @@ Please donate via PayPal to donate@opencart.com
 //-->
 <div id="powered" class="sixteen columns">
 	<div id="footer-bottom"><?php echo $powered; ?>
+	<!-- 
 		<div class="payment">
 			<ul>
 				<li><a href="#"> <img title="Visa" src="image/data/payment/visa.png"
@@ -112,15 +115,16 @@ Please donate via PayPal to donate@opencart.com
 				<li><a href="#"> <img title="Skrill"
 					src="image/data/payment/skrill.png" alt="Skrill"> </a></li>
 			</ul>
-		</div>
+		</div>-->
 	</div>
-	<div class="language_currency"><?php echo $language; ?> <?php echo $currency; ?>
+	<div class="language_currency"><?php echo $language; ?> <?php //echo $currency; ?>
 	</div>
 </div>
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
 //-->
+</div>
 </div>
 </body>
 </html>

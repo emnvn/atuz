@@ -5,6 +5,16 @@ class ControllerModuleCategoryTabs extends Controller {
 		$this->language->load('module/category_tabs');
 		
     	$this->data['heading_title'] = $this->language->get('heading_title');
+    	$this->data['basic_web_title'] = $this->language->get('basic_web_title');
+    	$this->data['basic_web_text'] = $this->language->get('basic_web_text');
+    	
+    	$this->data['pro_web_title'] = $this->language->get('pro_web_title');
+    	$this->data['pro_web_text'] = $this->language->get('pro_web_text');
+    	
+    	$this->data['free_web_title'] = $this->language->get('free_web_title');
+    	$this->data['free_web_text'] = $this->language->get('free_web_text');
+    	
+    	$this->data['view_more'] = $this->language->get('view_more');
 		
 		if (isset($this->request->get['path'])) {
 			$parts = explode('_', (string)$this->request->get['path']);

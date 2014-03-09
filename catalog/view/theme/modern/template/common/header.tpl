@@ -61,6 +61,7 @@ DD_belatedPNG.fix('#logo img');
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $page_type?>"  data-twttr-rendered="true">
+<div class="viewport">
 <div id="container" class="container">
 <div id="header" class="sixteen columns">
 	<div class="boss_header_top">

@@ -5758,3 +5758,5 @@
 2013-04-22 16:58:52 - PHP Notice:  Undefined variable: module in C:\ApacheWebs\opencart\wwwhn\catalog\view\theme\modern\template\module\latest.tpl on line 2
 2013-04-22 16:59:13 - PHP Notice:  Undefined variable: module in C:\ApacheWebs\opencart\wwwhn\catalog\view\theme\modern\template\module\latest.tpl on line 2
 2013-04-22 16:59:28 - PHP Notice:  Undefined variable: module in C:\ApacheWebs\opencart\wwwhn\catalog\view\theme\modern\template\module\latest.tpl on line 2
+2014-03-09 3:18:40 - PHP Notice:  Undefined variable: pro_web_title in C:\ApacheWebs\opencart\wwwhn\catalog\view\theme\modern\template\module\category_tabs.tpl on line 15
+2014-03-09 3:18:40 - PHP Notice:  Undefined variable: pro_web_text in C:\ApacheWebs\opencart\wwwhn\catalog\view\theme\modern\template\module\category_tabs.tpl on line 16

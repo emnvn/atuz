@@ -1,7 +1,43 @@
 <div class="boss-frame">
 <div class="boss-block-home">
 
-<div class="block-home-1 block-home-column"><a href="#"><img
+<div class="block-home-1 block-home-column">
+<a href="#"><img
+	alt="block-home1"
+	src="image/data/banners/web_basic.png" width="250px"
+	title="block-home1"></a>
+<h3><?php echo $basic_web_title; ?></h3>
+<p><?php echo $basic_web_text; ?></p>
+<p><a class="view-more" ><?php echo $view_more; ?></a></p>
+</div>
+
+<div class="block-home-2 block-home-column">
+<h3><?php echo $pro_web_title; ?></h3>
+<p><?php echo $pro_web_text; ?></p>
+<p><a class="view-more" href="#" ><?php echo $view_more; ?></a></p>
+<a href="#"><img
+	alt="block-home2"
+	src="image/data/banners/web_ecomerce.jpg" width="250px"
+	title="Web ecommerce"></a>
+
+</div>
+
+
+<div class="block-home-3 block-home-column">
+	<h3><?php echo $free_web_title; ?></h3>
+	<p><?php echo $free_web_text; ?></p>
+	
+	<a href="#"><img
+		alt="block-home2"
+		src="image/data/banners/100_free.png" 
+		title="Free"></a>
+		<p><a class="view-more" href="#" ><?php echo $view_more; ?></a></p>
+</div>
+
+<!-- 
+<div class="block-home-1 block-home-column">
+
+<a href="#"><img
 	alt="block-home1"
 	src="image/data/banners/top_block_01.png"
 	title="block-home1"></a>
@@ -10,7 +46,6 @@ mauris sed arcur</h4>
 
 <p>Nam eu risus ac odio gravida scelerisque vitae et erat.</p>
 </div>
-
 <div class="block-home-2 block-home-column">
 <h4>Pellentesque Sit<br>
 Amet Pulvinar</h4>
@@ -19,18 +54,7 @@ Amet Pulvinar</h4>
 <a href="#"><img alt="block-home4"
 	src="image/data/banners/top_block_04.png"
 	title="block-home4"></a></div>
-
-<div class="block-home-3 block-home-column"><a href="#"><img
-	alt="block-home2"
-	src="image/data/banners/top_block_02.png"
-	title="block-home2"></a>
-
-<h4>Lorem ipsum<br>
-dolor sit</h4>
-
-<p>Vivamus ut nulla quam, id suscipit diam sollicitudin.</p>
-</div>
-
+	
 <div class="block-home-4 block-home-column">
 <h4>Maecenas etes<br>
 nuncfun</h4>
@@ -38,8 +62,9 @@ nuncfun</h4>
 	alt="block-home3"
 	src="image/data/banners/top_block_03.png"
 	title="block-home3"></a></div>
-
 </div>
+-->
+
 </div>
 <div id="boss_category_tabs<?php echo $module?>" class="category_tabs">
 <h4><?php echo $heading_title; ?></h4>

@@ -4,8 +4,17 @@ body {
     color: #7f7a6d;
     font-family:Arial,Helvetica,sans-serif;
     font-size: 12px;
-    text-align: center;}
-body.home_page{} /*repeat color index*/
+    text-align: center;
+	
+}
+body div.viewport{
+	/*background:url(../image/socialFooterBg.jpg) no-repeat; 
+	background-position:bottom;
+	*/
+	background:url(../image/footer_bg_blue.jpg) no-repeat; 
+	background-position:bottom;
+	
+} /*repeat color index*/
 
 h1{text-transform:uppercase; font-size:16px;font-weight:400; margin-bottom:11px; color:#2b2f2e; font-family:Tahoma}
 h2 {font-size:12px; text-transform:uppercase; margin-bottom:11px; font-weight:700;color:#2b2f2e;}
@@ -28,6 +37,8 @@ p{margin-bottom:10px; line-height:16px}
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+	
+	
 }
 #column-left {
 	float: left;
@@ -1827,10 +1838,13 @@ form.register table.form td:first-child{padding-top:9px}
 #footer {
 	clear: both;
 	overflow: hidden;
-	background:url(../image/line_footer.jpg) no-repeat; padding-top:66px; /*margin-top:20px*/
+	padding-top:30px;
+	/*background:url(../image/line_footer.jpg) no-repeat; padding-top:66px; /*margin-top:20px*/
+	
 }
 #footer h3 {
 	color: #474236;
+	color:#999999;
 	font-size: 14px;
 	font-weight:700;
 	text-transform:uppercase;
@@ -1927,16 +1941,17 @@ form.register table.form td:first-child{padding-top:9px}
 .boss_carousel h2{font-family:Tahoma; font-size:24px; color:#fff; margin-bottom:3px; text-transform:capitalize; font-weight:400}
 .boss_carousel p{font-size:12px; color:#fff; margin-bottom:16px}
 .boss_carousel .b-es-carousel-wrapper{padding:0 25px}
-.boss_carousel .es-nav span.es-nav-next{background:url(../image/boss_carousel_next_03.png) no-repeat; width:13px; height:20px; display:block!important; top:20px}
-.boss_carousel .es-nav span.es-nav-prev{background:url(../image/boss_carousel_prev_03.png) no-repeat; width:13px; height:20px; display:block!important; top:20px; left:11px}
+.boss_carousel .es-nav span.es-nav-next{background:url(../image/boss_carousel_next_03.png) no-repeat; width:13px; height:20px; display:block!important; top:60px}
+.boss_carousel .es-nav span.es-nav-prev{background:url(../image/boss_carousel_prev_03.png) no-repeat; width:13px; height:20px; display:block!important; top:60px; left:11px}
 .boss_carousel .es-nav span.es-nav-next:hover{background:url(../image/boss_carousel_next_acti_05.png) no-repeat;}
 .boss_carousel .es-nav span.es-nav-prev:hover{background:url(../image/boss_carousel_prev_acti_05.png) no-repeat;}
 
-.boss-block-home{clear:both; overflow:hidden; background:url(../image/bg_top_block_03.png) no-repeat; height:317px; margin-bottom:17px}
-.boss-block-home .block-home-column{width:25%; float:left}
+.boss-block-home{clear:both; overflow:hidden; background:url(../image/bg_top_block_02.png) no-repeat; height:317px; margin-bottom:17px}
+.boss-block-home .block-home-column{width:33%; float:left}
 .boss-block-home .block-home-column h4{font-family:'gabo_driveregular'; font-size:24px; font-weight:400; line-height:25px; margin-bottom:5px}
 .boss-block-home .block-home-column p{color:#2b2f2e; font-size:12px; line-height:12px; margin-bottom:5px}
 .boss-block-home .block-home-column a.view-more{background:url(../image/viewmore_pink.jpg) no-repeat right 4px; padding-right:20px; color:#2b2f2e; font-size:12px}
+/*
 .boss-block-home .block-home-1 h4{padding:0 20px; color:#f61c5a}
 .boss-block-home .block-home-1 p{padding:0 20px}
 .boss-block-home .block-home-1 img{margin-top:15px}
@@ -1946,7 +1961,19 @@ form.register table.form td:first-child{padding-top:9px}
 .boss-block-home .block-home-3{text-align:right}
 .boss-block-home .block-home-3 h4{padding:5px 30px 0; color:#f61c5a; text-align:left}
 .boss-block-home .block-home-3 p{padding:0 20px 0 30px; text-align:left}
-.boss-block-home .block-home-3 img{margin-top:38px}
+.boss-block-home .block-home-3 img{margin-top:38px}*/
+
+.boss-block-home .block-home-1 h3{padding:0 20px; color:#f61c5a}
+.boss-block-home .block-home-1 p{padding:0 20px}
+.boss-block-home .block-home-1 img{margin-top:15px}
+.boss-block-home .block-home-2{text-align:center}
+.boss-block-home .block-home-2 h3{padding:29px 30px 0; color:#3fb0d7; text-align:left}
+.boss-block-home .block-home-2 p{padding:0 20px 0 30px; text-align:left}
+.boss-block-home .block-home-3{text-align:center}
+.boss-block-home .block-home-3 h3{padding:29px 30px 0; color:#f61c5a; text-align:left}
+.boss-block-home .block-home-3 p{padding:10px 20px 0 30px; text-align:left;color:#999999}
+.boss-block-home .block-home-3 img{margin-top:38px;margin-bottom:38px}
+
 .boss-block-home .block-home-4{text-align:left}
 .boss-block-home .block-home-4 h4{padding:28px 30px 0; color:#2b2f2e; text-align:left}
 .boss-block-home .block-home-4 a.view-more{padding:0 20px 0 30px; text-align:left;}
