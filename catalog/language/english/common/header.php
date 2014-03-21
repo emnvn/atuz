@@ -12,4 +12,5 @@ $_['text_template']       = 'Template';
 $_['text_guide']       = 'Guide';
 $_['text_contact']       = 'Contact';
 $_['text_news']       = 'News';
+$_['text_blogs']           = 'News';
 ?>

@@ -1,4 +1,37 @@
-<div id="footer" class="sixteen columns">
+<div id="footer" class="sixteen columns"> 
+<h2 style="color:#999999;"><?php // echo $text_location; ?></h2>
+<!-- 
+<h1><?php echo $store; ?></h1>
+-->
+<br />
+    <div class="contact-info">
+      <div class="content">
+      <div class="left">
+        <?php if ($telephone) { ?>
+        <b><?php echo $text_telephone; ?></b> <br />
+        <?php echo $telephone; ?><br />
+        <br />
+        <?php } ?>
+        <?php if ($fax) { ?>
+        <b><?php echo $text_fax; ?></b><br />
+        <?php echo $fax; ?>
+        <?php } ?>
+      </div>
+      
+      <div class="right"><b><?php echo $text_address; ?></b><br />
+        
+        <?php echo $address; ?></div>
+      
+      <div class="right">
+        <?php if ($email) { ?>
+        <b><?php echo $text_email; ?></b> <br />
+        <?php echo $email; ?><br />
+        <br />
+        <?php } ?>
+       
+      </div>
+    </div>
+    </div>
 <!-- 
 <div class="boss_block_footer_4">
 <ul>
@@ -41,7 +74,10 @@
 </ul>
 </div>
 -->
-<div id="footer-top"><?php $index = 1;?> <?php if ($informations) { ?>
+<!-- 
+<div id="footer-top">
+
+<?php $index = 1;?> <?php if ($informations) { ?>
 <div class="boss-footer-column column-<?php echo $index ?>"><?php $index++;?>
 <h3><?php echo $text_information; ?></h3>
 <ul>
@@ -93,14 +129,14 @@
 	<li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
 </ul>
 </div>
-
+-->
 </div>
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
 //-->
 <div id="powered" class="sixteen columns">
-	<div id="footer-bottom"><?php echo $powered; ?>
+	<div id="footer-bottom" style="color:white"><?php echo $powered; ?>
 	<!-- 
 		<div class="payment">
 			<ul>
@@ -117,7 +153,7 @@ Please donate via PayPal to donate@opencart.com
 			</ul>
 		</div>-->
 	</div>
-	<div class="language_currency"><?php echo $language; ?> <?php //echo $currency; ?>
+	 <?php //echo $currency; ?>
 	</div>
 </div>
 <!--

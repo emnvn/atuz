@@ -1,5 +1,12 @@
 body {background: url("../image/bg_color01_01.jpg") repeat-x scroll center 0 transparent;}
-body.home_page{background: url(../image/bg_index_color01_01.jpg) no-repeat center 0;	} 
+body.home_page{background: url(../image/bg_index_color01_01.jpg) no-repeat center 0;	}
+div.contact-info{
+	color:white;
+	font-size:18px;
+	line-height:1.5em;
+	color:#999999;
+}
+
 @media only screen and (max-width: 767px) {	 
 	     body{-webkit-text-size-adjust: none; font-size:14px; background:url(../image/bg_other_mobile_blue.jpg) no-repeat center 0}
 		 body.home_page{background:url(../image/bg_mobile_blue.jpg) no-repeat center 0}

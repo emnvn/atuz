@@ -4,7 +4,7 @@ $_['heading_title']  = 'Contact Us';
 
 // Text 
 $_['text_location']  = 'Our Location';
-$_['text_contact']   = 'Contact Form';
+$_['text_contact']   = 'Let me know about things which you interest in. We will reply to you soon! ';
 $_['text_address']   = 'Address:';
 $_['text_email']     = 'E-Mail:';
 $_['text_telephone'] = 'Telephone:';

@@ -43,6 +43,22 @@ class ControllerCommonFooter extends Controller {
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$this->data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');		
 
+		/*START Add contact detail information */
+		
+		$this->data['text_location'] = $this->language->get('text_location');
+		$this->data['text_address'] = $this->language->get('text_address');
+    	$this->data['text_telephone'] = $this->language->get('text_telephone');
+    	$this->data['text_email'] = $this->language->get('text_email');
+    	$this->data['text_fax'] = $this->language->get('text_fax');
+    	
+    	$this->data['store'] = $this->config->get('config_name');
+    	$this->data['address'] = nl2br($this->config->get('config_address'));
+    	$this->data['email'] = nl2br($this->config->get('config_email'));
+    	$this->data['telephone'] = $this->config->get('config_telephone');
+    	$this->data['fax'] = $this->config->get('config_fax');
+    	
+		/*END   Add contact detail information */
+		
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 		$this->children = array(
 			'module/language',

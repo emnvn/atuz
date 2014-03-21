@@ -14,5 +14,13 @@ $_['text_account']      = 'My Account';
 $_['text_order']        = 'Order History';
 $_['text_wishlist']     = 'Wish List';
 $_['text_newsletter']   = 'Newsletter';
-$_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a> %s &copy; %s';
+$_['text_powered']      = 'Copyright %s &copy; %s';
+
+//EMNVN
+$_['text_location']  = 'Contact details:';
+$_['text_contact']   = 'Contact Form';
+$_['text_address']   = 'Address:';
+$_['text_email']     = 'E-Mail:';
+$_['text_telephone'] = 'Telephone:';
+$_['text_fax']       = 'Fax:';
 ?>

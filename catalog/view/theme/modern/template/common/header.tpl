@@ -66,6 +66,7 @@ DD_belatedPNG.fix('#logo img');
 <div id="header" class="sixteen columns">
 	<div class="boss_header_top">
 		<div id="header-top-right">
+		<!-- 
 			<div id="welcome">
 			    <?php if (!$logged) { ?>
 			    <?php echo $text_welcome; ?>
@@ -74,6 +75,8 @@ DD_belatedPNG.fix('#logo img');
 			    <?php } ?>
 			</div>
   			<div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
+  			-->
+  			<div class="language_currency"><?php echo $language; ?></div>
 		</div>
 	</div>
 	<div class="boss_header_bottom">
@@ -115,13 +118,18 @@ DD_belatedPNG.fix('#logo img');
     //if($index==$num_of_items-1)$css_class="class='last'";
     $index++;
     ?>
-    <li <?php echo $css_class?>><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
     
+   
+    
+    
+    <li <?php echo $css_class?>><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+    <?php if(isset($category["related_news"])){?>
     <div class="dropdown" style="width:420px">
     	<div  class="option" style="width:260px;float:left">
     	<a class="parent"><?php echo $text_guide?></a>
-    	<?php //var_dump($category["related_news"]);?>
+    	
     	<ul style="margin-left:5px">
+    	
     	<?php foreach($category["related_news"] as $news){?>
     	<li>
     		<a  href="<?php echo $news['href']; ?>">
@@ -130,6 +138,7 @@ DD_belatedPNG.fix('#logo img');
     	</li>
     	<?php }?>
     	</ul>
+    	
     	</div>
     	<?php if ($category['children']) { ?>
       <div class="option" style="width:160px;float:left">
@@ -165,9 +174,13 @@ DD_belatedPNG.fix('#logo img');
       </div>
       <?php } ?>
     </div>
+    <?php }?>
     </li>
     <?php } ?>
+    
+     <!-- 
     <li><a href="<?php echo $menu_news['href']; ?>"><?php echo $menu_news['name']; ?></a></li>
+    -->
     <li class="last"><a href="<?php echo $menu_contact['href']; ?>"><?php echo $menu_contact['name']; ?></a></li>
   </ul>
 </div>

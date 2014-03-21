@@ -110,6 +110,7 @@ class ControllerCommonHeader extends Controller {
 					'href'     => $this->url->link('information/contact')
 		);
 		foreach ($categories as $category) {
+			
 			if ($category['top']) {
 				$children_data = array();
 				
@@ -155,14 +156,69 @@ class ControllerCommonHeader extends Controller {
 			}
 		}
 		
+	if(isset($this->data['categories'])){
+					$this->data['categories'][] = array(
+						'name'     => $this->language->get("text_blogs"),
+						'children' => array(),
+						'column'   => 1,
+						'href'     => $this->url->link('pavblog/blogs', '')
+					);
+				}
+
+		//Bo xung load module co vi tri mainmenu
+		/*$module_data = array();
+		
+		$this->load->model('setting/extension');
+		
+		$extensions = $this->model_setting_extension->getExtensions('module');		
+		
+		foreach ($extensions as $extension) {
+			if($extension['code']!="pavbloglatest") continue;
+			$modules = $this->config->get($extension['code'] . '_module');
+		//var_dump($modules);
+			if ($modules) {
+				foreach ($modules as $module) {
+					//if ($module['layout_id'] == $layout_id && $module['position'] == 'column_left' && $module['status']) {
+					if ($module['position'] == 'mainmenu' && $module['status']) {
+						$module_data[] = array(
+							'code'       => $extension['code'],
+							'setting'    => $module,
+							'sort_order' => $module['sort_order']
+						);				
+					}
+				}
+			}
+		}
+		
+		$sort_order = array(); 
+	  
+		foreach ($module_data as $key => $value) {
+      		$sort_order[$key] = $value['sort_order'];
+    	}
+		
+		array_multisort($sort_order, SORT_ASC, $module_data);
+		
+		$this->data['modules'] = array();
+		
+		foreach ($module_data as $module) {
+			
+			$module = $this->getChild('module/' . $module['code'], $module['setting']);
+			
+			if ($module) {
+			$this->data['modules'][] = $module;
+			}
+		}*/
+		//var_dump($this->data['modules']);
 		/*$this->children = array(
 			'module/language',
 			'module/currency',
 			'module/cart'
 		);*/
 		$this->children = array(
+			'module/language',
+			'module/currency',
 			'module/cart'
-		);		
+		);	
 		$page_type="home_page";
 		if(isset($this->request->get['route']) && $this->request->get['route']!="common/home")
 		$page_type = "other_page";
@@ -172,6 +228,7 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$this->template = 'default/template/common/header.tpl';
 		}
+	
 		
     	$this->render();
 	} 	

@@ -91,13 +91,18 @@ nuncfun</h4>
 	<div class="name"><a
 		href="index.php?route=product/product&product_id=<?php echo $product['product_id']?>"><?php echo $product["name"]?></a>
 	</div>
+	<!-- 
 	<a class="button_cart" title="Add to Cart"
 		onclick="boss_addToCart('<?php echo $product['product_id']?>');"
 		style="border-width: 0px;">Add to Cart</a>
+		
 	<div class="price"><?php if (!$product['special']) { ?> <?php echo $product['price']; ?>
 	<?php } else { ?> <span class="price-old"><?php echo $product['price']; ?></span>
-	<span class="price-new"><?php echo $product['special']; ?></span> <?php } ?>
+	
+	<span class="price-new"><?php echo $product['special']; ?></span> 
+	<?php } ?>
 	</div>
+	-->
 	<div class="rating"><img alt="text_reviews"
 		src="catalog/view/theme/modern/image/stars-3.png"></div>
 	</li>
