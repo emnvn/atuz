@@ -42,6 +42,7 @@
   </div>
   <?php } ?>
   <?php if ($products) { ?>
+  <!-- 
   <div class="product-filter">
   <div class="product-filter-frame">
     <div class="display"><b><?php echo $text_display; ?></b> 
@@ -73,7 +74,9 @@
     </div>
   </div>
   </div>
+  
   <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
+  -->
   <div class="product-list">
     <?php foreach ($products as $product) { ?>
     <div class="one_product">
@@ -82,8 +85,10 @@
       <?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
-      <?php if ($product['price']) { ?>
+      
+      <?php if ($product['price'] ) { ?>
       <div class="cart">
+      <!-- 
         <input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button_cart" />
       </div>
       <div class="price">
@@ -96,14 +101,17 @@
         <br />
         <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
         <?php } ?>
+        -->
       </div>
       <?php } ?>
+      
       <?php if ($product['rating']) { ?>
       <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
       <?php } ?>
-      
+      <!-- 
       <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
       <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
+      -->
     </div>
     <?php } ?>
   </div>
@@ -207,12 +215,20 @@ function display(view) {
 	}
 }
 
-view = $.cookie('display');
-
+//view = $.cookie('display');
+display('grid');
 if (view) {
-	display(view);
+	//display(view);
 } else {
-	display('list');
+	//display('list');
 }
 //--></script> 
 <?php echo $footer; ?>
+<style>
+
+.product-grid div.one_product{
+height:170px;
+width:125px;	
+}
+
+</style>

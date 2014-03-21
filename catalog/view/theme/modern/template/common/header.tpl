@@ -83,7 +83,7 @@ DD_belatedPNG.fix('#logo img');
 		<?php if ($logo) { ?>
 		  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 		  <?php } ?>
-		  <?php echo $cart; ?>
+		  <?php //echo $cart; ?>
 		  <div id="header-top-static">
 				<div class="static-header">
 					<a href="#">

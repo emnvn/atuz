@@ -17,6 +17,7 @@
 <?php } ?> <?php if ($images) { ?>
 <div class="image-additional a_bossthemes">
 <div class="es-carousel">
+<center>
 <ul class="skin-opencart">
 <?php foreach ($images as $image) { ?>
 	<li>
@@ -28,12 +29,13 @@
 	</li>
 	<?php } ?>
 </ul>
+</center>
 </div>
 
 </div>
 	<?php } ?></div>
 	<?php } ?>
-<div class="right">
+<div class="right" style="display:none">
 <div class="description"><?php if ($manufacturer) { ?> <span><?php echo $text_manufacturer; ?></span>
 <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
 	<?php } ?> <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />

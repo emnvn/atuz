@@ -12,6 +12,7 @@
         <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
         <?php } ?>
         <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+        <!--  
         <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button_cart" /></div>
         <?php if ($product['price']) { ?>
         <div class="price">
@@ -22,6 +23,7 @@
           <?php } ?>
         </div>
         <?php } ?>
+        -->
         </div>
       </li>
       <?php } ?>
