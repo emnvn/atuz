@@ -1,0 +1,41 @@
+<?php
+// Text
+$_['text_new_subject']          = '%s - Đơn hàng %s';
+$_['text_new_greeting']         = 'Cám on bạn đã quan tâm đến mặt hàng %s . Đơn hàng của bạn đã được nhận và sẽ được xử lý sau khi bạn hoàn tất thanh toán.';
+$_['text_new_received']         = 'Bạn đã nhận một đơn hàng.';
+$_['text_new_link']             = 'Để xem thông tin đơn hàng, click vào link bên dưới:';
+$_['text_new_order_detail']     = 'Chi tiết đơn hàng';
+$_['text_new_instruction']      = 'Hướng dẫna';
+$_['text_new_order_id']         = 'Order ID:';
+$_['text_new_date_added']       = 'Ngày tạo:';
+$_['text_new_order_status']     = 'T.Thái đơn hàng:';
+$_['text_new_payment_method']   = 'Phương thức thanh toán';
+$_['text_new_shipping_method']  = 'Phương thức vận chuyển:';
+$_['text_new_email']  			= 'Email:';
+$_['text_new_telephone']  		= 'Mobile:';
+$_['text_new_ip']  				= 'Địa chỉ IP:';
+$_['text_new_payment_address']  = 'Địa chỉ thanh toán';
+$_['text_new_shipping_address'] = 'Địa chỉ vận chuyển';
+$_['text_new_products']         = 'Các mặt hàng';
+$_['text_new_product']          = 'mặt hàng';
+$_['text_new_model']            = 'Model';
+$_['text_new_quantity']         = 'S.Lượng';
+$_['text_new_price']            = 'Giá';
+$_['text_new_order_total']      = 'Tổng đơn hàng';	
+$_['text_new_total']            = 'Tổng';	
+$_['text_new_download']         = 'Sau khi được xác nhận đã thạnh toán, bạn có thể click vào link bên dưới để download:';
+$_['text_new_comment']          = 'Ghi chú về đơn hàng của bạn là:';
+$_['text_new_footer']           = 'Vui lòng reply email này nếu bạn có câu hỏi cần giải dáp.';
+$_['text_new_powered']          = 'Powered By <a href="http://www.h2d-style.net">H2D-Style</a>.';
+$_['text_update_subject']       = '%s - cập nhật đơn hàng %s';
+$_['text_update_order']         = 'Order ID:';
+$_['text_update_date_added']    = 'Ngày mua:';
+$_['text_update_order_status']  = 'Đơn hàng của bạn đã được cập nhật theo các trạng thái sau:';
+$_['text_update_comment']       = 'Ghi chú về đơn hàng của bạn là:';
+$_['text_update_link']          = 'Để xem đơn hàng click vào link bên dưới:';
+$_['text_update_footer']        = 'Vui lòng trả lời email nếu bạn có thắc mắc cần giải đáp.';
+$_['text_product_detail']                  = 'Chi tiết';
+$_['column_quantity']                = 'Số lượng';
+$_['column_size']                   = 'Size';
+$_['column_color']                   = 'Màu';
+?>

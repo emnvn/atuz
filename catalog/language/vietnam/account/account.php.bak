@@ -1,0 +1,20 @@
+<?php
+// Heading 
+$_['heading_title']      = 'Tài khoản của tôi';
+
+// Text
+$_['text_account']       = 'Tài khoản';
+$_['text_my_account']    = 'Tài khoản của tôi';
+$_['text_my_orders']     = 'Đơn hàng';
+$_['text_my_newsletter'] = 'Nhân thông báo';
+$_['text_edit']          = 'Cập nhật thông tin tài khoản của bạn';
+$_['text_password']      = 'Thay đổi mật khẩu';
+$_['text_address']       = 'Thay đổi địa chỉ giao hàng';
+$_['text_wishlist']      = 'Thay đổi danh sách mặt hàng ưa thích';
+$_['text_order']         = 'Xem lịch sử đơn hàng';
+$_['text_download']      = 'Downloads';
+$_['text_reward']        = 'Điểm thưởng'; 
+$_['text_return']        = 'View your return requests'; 
+$_['text_transaction']   = 'Giao dịch'; 
+$_['text_newsletter']    = 'Đăng ký / hủy đăng ký thông báo từ chúng tôi';
+?>

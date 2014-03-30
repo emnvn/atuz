@@ -90,7 +90,7 @@ DD_belatedPNG.fix('#logo img');
 <img class="call-us" title="call-us" src="catalog/view/theme/modern/image/callus.png" alt="call-us">
 </a>
 					<h4>Call us today</h4>
-					<p>010.0123.4567</p>
+					<p><?php echo $telephone ?></p>
 				</div>
 		</div>
 		<div id="search">
@@ -112,16 +112,15 @@ DD_belatedPNG.fix('#logo img');
 
 <div id="boss_menu" class="mega-menu">
   <ul>
-  <li><a href="<?php echo $menu_home['href']; ?>"><?php echo $menu_home['name']; ?></a></li>
+  <!--  <li><a href="<?php echo $menu_home['href']; ?>"><?php echo $menu_home['name']; ?></a></li>
+  -->
+  <li><a href="<?php echo $menu_home['href']; ?>"><img src="image/icons/home_w.png" width="32px" border="0"></a></li>
     <?php foreach ($categories as $category) { 
     $css_class = "";
     //if($index==$num_of_items-1)$css_class="class='last'";
     $index++;
     ?>
-    
-   
-    
-    
+  
     <li <?php echo $css_class?>><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
     <?php if(isset($category["related_news"])){?>
     <div class="dropdown" style="width:420px">
