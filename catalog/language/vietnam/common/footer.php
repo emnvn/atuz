@@ -33,6 +33,6 @@ $_['text_location']  = 'Chi tiết liên hệ:';
 $_['text_contact']   = 'Liên hệ';
 $_['text_address']   = 'Địa chỉ:';
 $_['text_email']     = 'E-Mail:';
-$_['text_telephone'] = 'Điệm thoại:';
+$_['text_telephone'] = 'Điện thoại:';
 $_['text_fax']       = 'Fax:';
 ?>

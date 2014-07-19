@@ -564,13 +564,13 @@ span.yellow_button input.button, a.yellow_button span{background:url(../image/ye
 	height: 36px;
 	line-height: 36px;
 	background:#efefef;
-	margin-left:20px
+	/*margin-left:20px*/
 }
 .htabs a { font-family:Tahoma; font-size:14px; text-transform:uppercase; color:#7f7a6d; font-weight:400; margin-right:11px; /*background:url(../image/line_htab.jpg) no-repeat right;*/ padding:0 12px; display:inline-block; height:36px;
 }
 .htabs a:first-child{}
 .htabs a.selected {
-	background:url(../image/htab_left_select.png) no-repeat left; padding-left:7px; padding-right:0; display:inline-block; height:36px; color:#fff; font-size:14px; font-family:Tahoma; text-decoration:none
+	background:url(../image/htab_left_select.png) no-repeat left; padding-left:6px; padding-right:0; display:inline-block; height:36px; color:#fff; font-size:14px; font-family:Tahoma; text-decoration:none
 }
 .htabs a.selected span{background:url(../image/htab_select_right.png) no-repeat right; padding:0 20px 0 15px; height:36px; line-height:36px; display:inline-block}
 .htabs a.selected span b{background:url(../image/icon_htab.png) no-repeat bottom; padding-bottom:5px; font-weight:400; display:inline-block;}
